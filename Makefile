@@ -7,7 +7,7 @@ clean:
 	rm *.cpp
 
 watch:
-	java -jar ~/.scripts/bin/ferret -wi f.clj
+	java -jar `which ferret` -wi f.clj
 
 ast:
-	java -jar ~/.scripts/bin/ferret --ast -i f.clj
+	java -jar `which ferret` --ast -i f.clj
